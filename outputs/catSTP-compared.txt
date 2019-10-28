@@ -1,0 +1,131 @@
+Comparison of the Reverse Engineering Tools Ghidra and Dyninst
+
+Address, Ghidra Symbols, Dyninst Symbols, Full Match, Partial Match
+1490, [_DT_INIT], [_init], false, true
+14b0, [FUN_001014b0], [ ], false, false
+14c0, [ ], [free], false, false
+14d0, [ ], [abort], false, false
+14e0, [ ], [__errno_location], false, false
+14f0, [ ], [strncmp], false, false
+1520, [ ], [write], false, false
+1530, [ ], [textdomain], false, false
+1540, [ ], [fclose], false, false
+1550, [ ], [bindtextdomain], false, false
+1560, [ ], [stpcpy], false, false
+1570, [ ], [dcgettext], false, false
+1580, [ ], [__ctype_get_mb_cur_max], false, false
+1590, [ ], [strlen], false, false
+15a0, [ ], [__stack_chk_fail], false, false
+15b0, [ ], [getopt_long], false, false
+15c0, [ ], [mbrtowc], false, false
+15d0, [ ], [strrchr], false, false
+15e0, [ ], [lseek], false, false
+15f0, [ ], [memset], false, false
+1600, [ ], [ioctl], false, false
+1610, [ ], [close], false, false
+1620, [ ], [posix_fadvise], false, false
+1630, [ ], [read], false, false
+1640, [ ], [memcmp], false, false
+1650, [ ], [fputs_unlocked], false, false
+1670, [ ], [fputc_unlocked], false, false
+1680, [ ], [memcpy], false, false
+1690, [ ], [fileno], false, false
+16a0, [ ], [malloc], false, false
+16b0, [ ], [fflush], false, false
+16c0, [ ], [nl_langinfo], false, false
+16d0, [ ], [__fxstat], false, false
+16e0, [ ], [__freading], false, false
+16f0, [ ], [realloc], false, false
+1700, [ ], [setlocale], false, false
+1710, [ ], [__printf_chk], false, false
+1720, [ ], [memmove], false, false
+1730, [ ], [error], false, false
+1740, [ ], [open], false, false
+1750, [ ], [fseeko], false, false
+1760, [ ], [__cxa_atexit], false, false
+1770, [ ], [getpagesize], false, false
+1780, [ ], [exit], false, false
+1790, [ ], [fwrite], false, false
+17a0, [ ], [__fprintf_chk], false, false
+17b0, [ ], [mbsinit], false, false
+17c0, [ ], [iswprint], false, false
+17d0, [ ], [__ctype_b_loc], false, false
+17e0, [ ], [targ17e0], false, false
+17f0, [FUN_001017f0], [_start], false, true
+1820, [FUN_00101820], [main], false, true
+2430, [entry], [ ], false, false
+2460, [FUN_00102460], [targ2460], true, true
+24f0, [_FINI_0], [ ], false, false
+2530, [_INIT_0], [ ], false, false
+2540, [FUN_00102540], [targ2540], true, true
+25c0, [FUN_001025c0], [targ25c0], true, true
+29a0, [FUN_001029a0], [ ], false, false
+29b0, [FUN_001029b0], [ ], false, false
+29c0, [FUN_001029c0], [ ], false, false
+2a70, [FUN_00102a70], [targ2a70], true, true
+2a80, [FUN_00102a80], [ ], false, false
+2ab0, [FUN_00102ab0], [targ2ab0], true, true
+2b30, [FUN_00102b30], [targ2b30], true, true
+2bd0, [FUN_00102bd0], [targ2bd0], true, true
+2cc0, [FUN_00102cc0], [targ2cc0], true, true
+3f00, [FUN_00103f00], [targ3f00], true, true
+40b0, [FUN_001040b0], [ ], false, false
+40f0, [FUN_001040f0], [ ], false, false
+4110, [FUN_00104110], [ ], false, false
+4130, [FUN_00104130], [ ], false, false
+4170, [FUN_00104170], [ ], false, false
+4190, [FUN_00104190], [ ], false, false
+41c0, [FUN_001041c0], [ ], false, false
+4240, [FUN_00104240], [ ], false, false
+4330, [FUN_00104330], [ ], false, false
+4340, [FUN_00104340], [ ], false, false
+43e0, [FUN_001043e0], [ ], false, false
+4400, [FUN_00104400], [ ], false, false
+4410, [FUN_00104410], [ ], false, false
+4430, [FUN_00104430], [ ], false, false
+4450, [FUN_00104450], [ ], false, false
+44e0, [FUN_001044e0], [ ], false, false
+4570, [FUN_00104570], [targ4570], true, true
+4580, [FUN_00104580], [ ], false, false
+4590, [FUN_00104590], [ ], false, false
+4630, [FUN_00104630], [ ], false, false
+4640, [FUN_00104640], [ ], false, false
+4660, [FUN_00104660], [ ], false, false
+4670, [FUN_00104670], [targ4670], true, true
+4700, [FUN_00104700], [ ], false, false
+47a0, [FUN_001047a0], [ ], false, false
+47b0, [FUN_001047b0], [ ], false, false
+47d0, [FUN_001047d0], [ ], false, false
+47f0, [FUN_001047f0], [ ], false, false
+4800, [FUN_00104800], [ ], false, false
+4820, [FUN_00104820], [ ], false, false
+4840, [FUN_00104840], [ ], false, false
+4860, [FUN_00104860], [targ4860], true, true
+48c0, [FUN_001048c0], [targ48c0], true, true
+4920, [FUN_00104920], [targ4920], true, true
+4d60, [FUN_00104d60], [ ], false, false
+4d80, [FUN_00104d80], [ ], false, false
+4e00, [FUN_00104e00], [targ4e00], true, true
+4ee0, [FUN_00104ee0], [ ], false, false
+4f80, [FUN_00104f80], [targ4f80], true, true
+4fa0, [FUN_00104fa0], [ ], false, false
+4fe0, [FUN_00104fe0], [targ4fe0], true, true
+5020, [FUN_00105020], [ ], false, false
+5050, [FUN_00105050], [ ], false, false
+50e0, [FUN_001050e0], [ ], false, false
+5130, [FUN_00105130], [ ], false, false
+5150, [FUN_00105150], [ ], false, false
+5180, [FUN_00105180], [targ5180], true, true
+51b0, [FUN_001051b0], [ ], false, false
+51d0, [FUN_001051d0], [targ51d0], true, true
+5210, [FUN_00105210], [targ5210], true, true
+52a0, [FUN_001052a0], [ ], false, false
+5320, [FUN_00105320], [targ5320], true, true
+5380, [FUN_00105380], [targ5380], true, true
+53c0, [FUN_001053c0], [ ], false, false
+5440, [FUN_00105440], [targ5440], true, true
+5480, [FUN_00105480], [targ5480], true, true
+54e0, [FUN_001054e0], [ ], false, false
+5550, [FUN_00105550], [ ], false, false
+5560, [FUN_00105560], [targ5560], true, true
+5570, [_DT_FINI], [_fini], false, true

@@ -1,0 +1,136 @@
+Comparison of the Reverse Engineering Tools Ghidra and Dyninst
+
+Address, Ghidra Symbols, Dyninst Symbols, Full Match, Partial Match
+1490, [_init], [_init], true, true
+14b0, [FUN_001014b0], [ ], false, false
+14c0, [ ], [free], false, false
+14d0, [ ], [abort], false, false
+14e0, [ ], [__errno_location], false, false
+14f0, [ ], [strncmp], false, false
+1500, [ ], [_exit], false, false
+1510, [ ], [__fpending], false, false
+1520, [ ], [write], false, false
+1530, [ ], [textdomain], false, false
+1540, [ ], [fclose], false, false
+1550, [ ], [bindtextdomain], false, false
+1560, [ ], [stpcpy], false, false
+1570, [ ], [dcgettext], false, false
+1580, [ ], [__ctype_get_mb_cur_max], false, false
+1590, [ ], [strlen], false, false
+15a0, [ ], [__stack_chk_fail], false, false
+15b0, [ ], [getopt_long], false, false
+15c0, [ ], [mbrtowc], false, false
+15d0, [ ], [strrchr], false, false
+15e0, [ ], [lseek], false, false
+15f0, [ ], [memset], false, false
+1600, [ ], [ioctl], false, false
+1610, [ ], [close], false, false
+1620, [ ], [posix_fadvise], false, false
+1630, [ ], [read], false, false
+1640, [ ], [memcmp], false, false
+1650, [ ], [fputs_unlocked], false, false
+1660, [ ], [calloc], false, false
+1670, [ ], [fputc_unlocked], false, false
+1680, [ ], [memcpy], false, false
+1690, [ ], [fileno], false, false
+16a0, [ ], [malloc], false, false
+16b0, [ ], [fflush], false, false
+16c0, [ ], [nl_langinfo], false, false
+16d0, [ ], [__fxstat], false, false
+16e0, [ ], [__freading], false, false
+16f0, [ ], [realloc], false, false
+1700, [ ], [setlocale], false, false
+1710, [ ], [__printf_chk], false, false
+1720, [ ], [memmove], false, false
+1730, [ ], [error], false, false
+1740, [ ], [open], false, false
+1750, [ ], [fseeko], false, false
+1760, [ ], [__cxa_atexit], false, false
+1770, [ ], [getpagesize], false, false
+1780, [ ], [exit], false, false
+1790, [ ], [fwrite], false, false
+17a0, [ ], [__fprintf_chk], false, false
+17b0, [ ], [mbsinit], false, false
+17c0, [ ], [iswprint], false, false
+17d0, [ ], [__ctype_b_loc], false, false
+17e0, [ ], [targ17e0], false, false
+17f0, [write_pending.part.5], [write_pending.part.5], true, true
+1820, [main], [main], true, true
+2430, [_start], [_start], true, true
+2460, [deregister_tm_clones], [deregister_tm_clones], true, true
+24a0, [register_tm_clones], [register_tm_clones], true, true
+24f0, [__do_global_dtors_aux], [__do_global_dtors_aux], true, true
+2530, [frame_dummy], [frame_dummy], true, true
+2540, [next_line_num], [next_line_num], true, true
+25c0, [usage], [usage], true, true
+29a0, [close_stdout_set_file_name], [close_stdout_set_file_name], true, true
+29b0, [close_stdout_set_ignore_EPIPE], [close_stdout_set_ignore_EPIPE], true, true
+29c0, [close_stdout], [close_stdout], true, true
+2a70, [fdadvise], [fdadvise], true, true
+2a80, [fadvise], [fadvise], true, true
+2ab0, [full_write], [full_write], true, true
+2b30, [set_program_name], [set_program_name], true, true
+2bd0, [gettext_quote.part.1], [gettext_quote.part.1], true, true
+2cc0, [quotearg_buffer_restyled], [quotearg_buffer_restyled], true, true
+3f00, [quotearg_n_options], [quotearg_n_options], true, true
+40b0, [clone_quoting_options], [clone_quoting_options], true, true
+40f0, [get_quoting_style], [get_quoting_style], true, true
+4110, [set_quoting_style], [set_quoting_style], true, true
+4130, [set_char_quoting], [set_char_quoting], true, true
+4170, [set_quoting_flags], [set_quoting_flags], true, true
+4190, [set_custom_quoting], [set_custom_quoting], true, true
+41c0, [quotearg_buffer], [quotearg_buffer], true, true
+4240, [quotearg_alloc_mem], [quotearg_alloc_mem], true, true
+4330, [quotearg_alloc], [quotearg_alloc], true, true
+4340, [quotearg_free], [quotearg_free], true, true
+43e0, [quotearg_n], [quotearg_n], true, true
+4400, [quotearg_n_mem], [quotearg_n_mem], true, true
+4410, [quotearg], [quotearg], true, true
+4430, [quotearg_mem], [quotearg_mem], true, true
+4450, [quotearg_n_style], [quotearg_n_style], true, true
+44e0, [quotearg_n_style_mem], [quotearg_n_style_mem], true, true
+4570, [quotearg_style], [quotearg_style], true, true
+4580, [quotearg_style_mem], [quotearg_style_mem], true, true
+4590, [quotearg_char_mem], [quotearg_char_mem], true, true
+4630, [quotearg_char], [quotearg_char], true, true
+4640, [quotearg_colon], [quotearg_colon], true, true
+4660, [quotearg_colon_mem], [quotearg_colon_mem], true, true
+4670, [quotearg_n_style_colon], [quotearg_n_style_colon], true, true
+4700, [quotearg_n_custom_mem], [quotearg_n_custom_mem], true, true
+47a0, [quotearg_n_custom], [quotearg_n_custom], true, true
+47b0, [quotearg_custom], [quotearg_custom], true, true
+47d0, [quotearg_custom_mem], [quotearg_custom_mem], true, true
+47f0, [quote_n_mem], [quote_n_mem], true, true
+4800, [quote_mem], [quote_mem], true, true
+4820, [quote_n], [quote_n], true, true
+4840, [quote], [quote], true, true
+4860, [safe_read], [safe_read], true, true
+48c0, [safe_write], [safe_write], true, true
+4920, [version_etc_arn], [version_etc_arn], true, true
+4d60, [version_etc_ar], [version_etc_ar], true, true
+4d80, [version_etc_va], [version_etc_va], true, true
+4e00, [version_etc], [version_etc], true, true
+4ee0, [emit_bug_reporting_address], [emit_bug_reporting_address], true, true
+4f80, [xmalloc], [xmalloc], true, true
+4fa0, [xnmalloc], [xnmalloc], true, true
+4fd0, [ ], [xcharalloc], false, false
+4fe0, [xrealloc], [xrealloc], true, true
+5020, [xnrealloc], [xnrealloc], true, true
+5050, [x2nrealloc], [x2nrealloc], true, true
+50e0, [x2realloc], [x2realloc], true, true
+5130, [xzalloc], [xzalloc], true, true
+5150, [xcalloc], [xcalloc], true, true
+5180, [xmemdup], [xmemdup], true, true
+51b0, [xstrdup], [xstrdup], true, true
+51d0, [xalloc_die], [xalloc_die], true, true
+5210, [rpl_mbrtowc], [rpl_mbrtowc], true, true
+52a0, [close_stream], [close_stream], true, true
+5320, [hard_locale], [hard_locale], true, true
+5380, [locale_charset], [locale_charset], true, true
+53c0, [rpl_fclose], [rpl_fclose], true, true
+5440, [rpl_fflush], [rpl_fflush], true, true
+5480, [rpl_fseeko], [rpl_fseeko], true, true
+54e0, [__libc_csu_init], [__libc_csu_init], true, true
+5550, [__libc_csu_fini], [__libc_csu_fini], true, true
+5560, [atexit], [atexit], true, true
+5570, [_fini], [_fini], true, true

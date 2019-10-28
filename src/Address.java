@@ -56,16 +56,16 @@ public class Address {
     }
 
     public void printAddress() {
-        System.out.print(Long.toHexString(this.address) + ", ");
+        System.out.print(Long.toHexString(this.address) + "\t");
         // print all tools
         for (Map.Entry<Integer, List<String>> entry : tools.entrySet()) {
             if(entry.getValue() == null)
-                System.out.print("[ ], ");
+                System.out.print("[ ]\t");
             else
-                System.out.print(entry.getValue() + ", ");
+                System.out.print(entry.getValue() + "\t");
         }
 
-        System.out.println(fullMatch + ", " + partialMatch);
+        System.out.println(fullMatch + "\t" + partialMatch);
     }
 
     @Override

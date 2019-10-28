@@ -1,0 +1,383 @@
+Comparison of the Reverse Engineering Tools Ghidra and Dyninst
+
+Address	Ghidra Symbols	Dyninst Symbols	Full Match	Partial Match
+3408	[_init]	[_init]	true	true
+3420	[FUN_00103420]	[ ]	false	false
+3430	[ ]	[__ctype_toupper_loc]	false	false
+3440	[ ]	[getenv]	false	false
+3450	[ ]	[sigprocmask]	false	false
+3460	[ ]	[__snprintf_chk]	false	false
+3470	[ ]	[raise]	false	false
+3480	[ ]	[abort]	false	false
+3490	[ ]	[__errno_location]	false	false
+34a0	[ ]	[strncmp]	false	false
+34b0	[ ]	[localtime_r]	false	false
+34d0	[ ]	[strcpy]	false	false
+34f0	[ ]	[isatty]	false	false
+3500	[ ]	[sigaction]	false	false
+3510	[ ]	[iswcntrl]	false	false
+3520	[ ]	[wcswidth]	false	false
+3530	[ ]	[localeconv]	false	false
+3540	[ ]	[mbstowcs]	false	false
+3550	[ ]	[readlink]	false	false
+3560	[ ]	[clock_gettime]	false	false
+3570	[ ]	[setenv]	false	false
+3580	[ ]	[textdomain]	false	false
+3590	[ ]	[fclose]	false	false
+35a0	[ ]	[opendir]	false	false
+35b0	[ ]	[getpwuid]	false	false
+35c0	[ ]	[bindtextdomain]	false	false
+35d0	[ ]	[dcgettext]	false	false
+35e0	[ ]	[__ctype_get_mb_cur_max]	false	false
+35f0	[ ]	[strlen]	false	false
+3600	[ ]	[__lxstat]	false	false
+3610	[ ]	[__stack_chk_fail]	false	false
+3620	[ ]	[getopt_long]	false	false
+3630	[ ]	[mbrtowc]	false	false
+3640	[ ]	[strchr]	false	false
+3650	[ ]	[getgrgid]	false	false
+3660	[ ]	[__fxstatat]	false	false
+3670	[ ]	[snprintf]	false	false
+3680	[ ]	[__overflow]	false	false
+3690	[ ]	[strrchr]	false	false
+36a0	[ ]	[fgetfilecon]	false	false
+36b0	[ ]	[gmtime_r]	false	false
+36c0	[ ]	[lseek]	false	false
+36d0	[ ]	[__assert_fail]	false	false
+36e0	[ ]	[__strtoul_internal]	false	false
+36f0	[ ]	[fnmatch]	false	false
+3700	[ ]	[memset]	false	false
+3710	[ ]	[ioctl]	false	false
+3720	[ ]	[getcwd]	false	false
+3730	[ ]	[strspn]	false	false
+3740	[ ]	[closedir]	false	false
+3750	[ ]	[memcmp]	false	false
+3760	[ ]	[_setjmp]	false	false
+3770	[ ]	[fputs_unlocked]	false	false
+3780	[ ]	[calloc]	false	false
+3790	[ ]	[lgetfilecon]	false	false
+37a0	[ ]	[strcmp]	false	false
+37b0	[ ]	[signal]	false	false
+37c0	[ ]	[dirfd]	false	false
+37d0	[ ]	[fputc_unlocked]	false	false
+37e0	[ ]	[getpwnam]	false	false
+37f0	[ ]	[__memcpy_chk]	false	false
+3800	[ ]	[sigemptyset]	false	false
+3810	[ ]	[memcpy]	false	false
+3820	[ ]	[getgrnam]	false	false
+3830	[ ]	[getfilecon]	false	false
+3840	[ ]	[tzset]	false	false
+3850	[ ]	[fileno]	false	false
+3860	[ ]	[tcgetpgrp]	false	false
+3870	[ ]	[__xstat]	false	false
+3880	[ ]	[readdir]	false	false
+3890	[ ]	[wcwidth]	false	false
+38a0	[ ]	[fflush]	false	false
+38b0	[ ]	[nl_langinfo]	false	false
+38c0	[ ]	[__fxstat]	false	false
+38d0	[ ]	[strcoll]	false	false
+38e0	[ ]	[mktime]	false	false
+38f0	[ ]	[__freading]	false	false
+3900	[ ]	[fwrite_unlocked]	false	false
+3910	[ ]	[realloc]	false	false
+3920	[ ]	[stpncpy]	false	false
+3930	[ ]	[setlocale]	false	false
+3940	[ ]	[__printf_chk]	false	false
+3950	[ ]	[timegm]	false	false
+3960	[ ]	[strftime]	false	false
+3970	[ ]	[mempcpy]	false	false
+3980	[ ]	[memmove]	false	false
+3990	[ ]	[error]	false	false
+39a0	[ ]	[fseeko]	false	false
+39b0	[ ]	[unsetenv]	false	false
+39c0	[ ]	[__cxa_atexit]	false	false
+39d0	[ ]	[wcstombs]	false	false
+39e0	[ ]	[freecon]	false	false
+39f0	[ ]	[gethostname]	false	false
+3a00	[ ]	[sigismember]	false	false
+3a10	[ ]	[exit]	false	false
+3a20	[ ]	[fwrite]	false	false
+3a30	[ ]	[__fprintf_chk]	false	false
+3a40	[ ]	[fflush_unlocked]	false	false
+3a50	[ ]	[mbsinit]	false	false
+3a60	[ ]	[iswprint]	false	false
+3a70	[ ]	[sigaddset]	false	false
+3a80	[ ]	[__ctype_tolower_loc]	false	false
+3a90	[ ]	[__ctype_b_loc]	false	false
+3aa0	[ ]	[__sprintf_chk]	false	false
+3ab0	[ ]	[free]	false	false
+3ab8	[ ]	[malloc]	false	false
+3ac0	[ ]	[__cxa_finalize]	false	false
+3ad0	[FUN_00103ad0]	[main]	false	true
+54a0	[entry]	[ ]	false	false
+54d0	[FUN_001054d0]	[targ54d0]	true	true
+5560	[_FINI_0]	[ ]	false	false
+55a0	[_INIT_0]	[ ]	false	false
+55b0	[FUN_001055b0]	[ ]	false	false
+55c0	[FUN_001055c0]	[ ]	false	false
+55e0	[FUN_001055e0]	[ ]	false	false
+5610	[FUN_00105610]	[targ5610]	true	true
+58a0	[FUN_001058a0]	[targ58a0]	true	true
+5920	[FUN_00105920]	[targ5920]	true	true
+5980	[FUN_00105980]	[targ5980]	true	true
+5c00	[FUN_00105c00]	[targ5c00]	true	true
+5c70	[FUN_00105c70]	[ ]	false	false
+5cb0	[FUN_00105cb0]	[ ]	false	false
+5cf0	[FUN_00105cf0]	[ ]	false	false
+5d00	[FUN_00105d00]	[ ]	false	false
+5d10	[FUN_00105d10]	[targ5d10]	true	true
+5d60	[FUN_00105d60]	[targ5d60]	true	true
+5e10	[FUN_00105e10]	[targ5e10]	true	true
+5e90	[FUN_00105e90]	[targ5e90]	true	true
+5f70	[FUN_00105f70]	[targ5f70]	true	true
+6110	[FUN_00106110]	[targ6110]	true	true
+6140	[FUN_00106140]	[ ]	false	false
+6170	[FUN_00106170]	[ ]	false	false
+61b0	[FUN_001061b0]	[ ]	false	false
+61c0	[FUN_001061c0]	[ ]	false	false
+61d0	[FUN_001061d0]	[ ]	false	false
+61e0	[FUN_001061e0]	[ ]	false	false
+61f0	[FUN_001061f0]	[targ61f0]	true	true
+6360	[FUN_00106360]	[targ6360]	true	true
+6430	[FUN_00106430]	[targ6430]	true	true
+6500	[FUN_00106500]	[targ6500]	true	true
+65c0	[FUN_001065c0]	[targ65c0]	true	true
+6600	[FUN_00106600]	[ ]	false	false
+6620	[FUN_00106620]	[targ6620]	true	true
+6690	[FUN_00106690]	[ ]	false	false
+6730	[FUN_00106730]	[ ]	false	false
+67d0	[FUN_001067d0]	[ ]	false	false
+6870	[FUN_00106870]	[ ]	false	false
+6910	[FUN_00106910]	[ ]	false	false
+69a0	[FUN_001069a0]	[ ]	false	false
+6a30	[FUN_00106a30]	[ ]	false	false
+6ac0	[FUN_00106ac0]	[ ]	false	false
+6b50	[FUN_00106b50]	[targ6b50]	true	true
+6c50	[FUN_00106c50]	[targ6c50]	true	true
+6ca0	[FUN_00106ca0]	[ ]	false	false
+6d50	[FUN_00106d50]	[ ]	false	false
+6de0	[FUN_00106de0]	[ ]	false	false
+6e70	[FUN_00106e70]	[ ]	false	false
+6f70	[FUN_00106f70]	[targ6f70]	true	true
+7140	[FUN_00107140]	[targ7140]	true	true
+7190	[FUN_00107190]	[targ7190]	true	true
+7200	[FUN_00107200]	[targ7200]	true	true
+72f0	[FUN_001072f0]	[targ72f0]	true	true
+7340	[FUN_00107340]	[targ7340]	true	true
+7770	[FUN_00107770]	[targ7770]	true	true
+7b80	[FUN_00107b80]	[targ7b80]	true	true
+7fe0	[FUN_00107fe0]	[targ7fe0]	true	true
+8170	[FUN_00108170]	[targ8170]	true	true
+8b80	[FUN_00108b80]	[targ8b80]	true	true
+8c10	[FUN_00108c10]	[targ8c10]	true	true
+8dc0	[FUN_00108dc0]	[targ8dc0]	true	true
+90d0	[FUN_001090d0]	[ ]	false	false
+9280	[FUN_00109280]	[targ9280]	true	true
+9660	[FUN_00109660]	[ ]	false	false
+9710	[FUN_00109710]	[ ]	false	false
+97d0	[FUN_001097d0]	[targ97d0]	true	true
+98a0	[FUN_001098a0]	[targ98a0]	true	true
+a700	[FUN_0010a700]	[targa700]	true	true
+adc0	[FUN_0010adc0]	[ ]	false	false
+ae00	[FUN_0010ae00]	[ ]	false	false
+ae40	[FUN_0010ae40]	[ ]	false	false
+ae90	[FUN_0010ae90]	[ ]	false	false
+aed0	[FUN_0010aed0]	[ ]	false	false
+af10	[FUN_0010af10]	[ ]	false	false
+af60	[FUN_0010af60]	[ ]	false	false
+afd0	[FUN_0010afd0]	[ ]	false	false
+b040	[FUN_0010b040]	[ ]	false	false
+b080	[FUN_0010b080]	[ ]	false	false
+b0c0	[FUN_0010b0c0]	[ ]	false	false
+b100	[FUN_0010b100]	[ ]	false	false
+b140	[FUN_0010b140]	[ ]	false	false
+b190	[FUN_0010b190]	[ ]	false	false
+b1e0	[FUN_0010b1e0]	[ ]	false	false
+b290	[FUN_0010b290]	[ ]	false	false
+b340	[FUN_0010b340]	[ ]	false	false
+b400	[FUN_0010b400]	[ ]	false	false
+b4b0	[FUN_0010b4b0]	[ ]	false	false
+b570	[FUN_0010b570]	[ ]	false	false
+b620	[FUN_0010b620]	[ ]	false	false
+b6a0	[FUN_0010b6a0]	[ ]	false	false
+b720	[FUN_0010b720]	[ ]	false	false
+b810	[FUN_0010b810]	[ ]	false	false
+b900	[FUN_0010b900]	[ ]	false	false
+b9b0	[FUN_0010b9b0]	[ ]	false	false
+ba70	[FUN_0010ba70]	[ ]	false	false
+bb20	[FUN_0010bb20]	[ ]	false	false
+bc20	[FUN_0010bc20]	[targbc20]	true	true
+c360	[FUN_0010c360]	[targc360]	true	true
+c530	[FUN_0010c530]	[ ]	false	false
+c540	[FUN_0010c540]	[targc540]	true	true
+c660	[FUN_0010c660]	[targc660]	true	true
+c6e0	[FUN_0010c6e0]	[targc6e0]	true	true
+c800	[FUN_0010c800]	[targc800]	true	true
+c870	[FUN_0010c870]	[ ]	false	false
+c8c0	[FUN_0010c8c0]	[targc8c0]	true	true
+c930	[FUN_0010c930]	[targc930]	true	true
+cf70	[FUN_0010cf70]	[ ]	false	false
+cf80	[FUN_0010cf80]	[ ]	false	false
+cf90	[FUN_0010cf90]	[ ]	false	false
+d040	[FUN_0010d040]	[targd040]	true	true
+d0a0	[FUN_0010d0a0]	[targd0a0]	true	true
+d100	[FUN_0010d100]	[targd100]	true	true
+d160	[FUN_0010d160]	[targd160]	true	true
+d1b0	[FUN_0010d1b0]	[targd1b0]	true	true
+d1c0	[FUN_0010d1c0]	[targd1c0]	true	true
+d250	[FUN_0010d250]	[targd250]	true	true
+d2b0	[FUN_0010d2b0]	[ ]	false	false
+d440	[FUN_0010d440]	[targd440]	true	true
+d450	[FUN_0010d450]	[targd450]	true	true
+d470	[FUN_0010d470]	[targd470]	true	true
+d570	[FUN_0010d570]	[targd570]	true	true
+d640	[FUN_0010d640]	[ ]	false	false
+da70	[FUN_0010da70]	[targda70]	true	true
+da80	[FUN_0010da80]	[ ]	false	false
+dad0	[FUN_0010dad0]	[targdad0]	true	true
+db30	[FUN_0010db30]	[targdb30]	true	true
+dbd0	[FUN_0010dbd0]	[ ]	false	false
+dbe0	[FUN_0010dbe0]	[ ]	false	false
+dbf0	[FUN_0010dbf0]	[targdbf0]	true	true
+dc20	[FUN_0010dc20]	[targdc20]	true	true
+dd40	[FUN_0010dd40]	[targdd40]	true	true
+ddc0	[FUN_0010ddc0]	[targddc0]	true	true
+df00	[FUN_0010df00]	[ ]	false	false
+df10	[FUN_0010df10]	[ ]	false	false
+df20	[FUN_0010df20]	[targdf20]	true	true
+df30	[FUN_0010df30]	[ ]	false	false
+df80	[FUN_0010df80]	[ ]	false	false
+dfe0	[FUN_0010dfe0]	[ ]	false	false
+e130	[FUN_0010e130]	[targe130]	true	true
+e190	[FUN_0010e190]	[ ]	false	false
+e1e0	[FUN_0010e1e0]	[ ]	false	false
+e260	[FUN_0010e260]	[ ]	false	false
+e2d0	[FUN_0010e2d0]	[ ]	false	false
+e340	[FUN_0010e340]	[ ]	false	false
+e380	[FUN_0010e380]	[ ]	false	false
+e3a0	[FUN_0010e3a0]	[targe3a0]	true	true
+e560	[FUN_0010e560]	[ ]	false	false
+e5f0	[FUN_0010e5f0]	[targe5f0]	true	true
+e6d0	[FUN_0010e6d0]	[targe6d0]	true	true
+e910	[FUN_0010e910]	[targe910]	true	true
+eba0	[FUN_0010eba0]	[targeba0]	true	true
+ec00	[FUN_0010ec00]	[targec00]	true	true
+ee10	[FUN_0010ee10]	[ ]	false	false
+ee40	[FUN_0010ee40]	[ ]	false	false
+ee50	[FUN_0010ee50]	[ ]	false	false
+ee80	[FUN_0010ee80]	[ ]	false	false
+eec0	[FUN_0010eec0]	[ ]	false	false
+eee0	[FUN_0010eee0]	[targeee0]	true	true
+efb0	[FUN_0010efb0]	[targefb0]	true	true
+f9c0	[FUN_0010f9c0]	[targf9c0]	true	true
+fbb0	[FUN_0010fbb0]	[targfbb0]	true	true
+fc50	[FUN_0010fc50]	[ ]	false	false
+fd50	[FUN_0010fd50]	[targfd50]	true	true
+fdf0	[FUN_0010fdf0]	[ ]	false	false
+fef0	[FUN_0010fef0]	[targfef0]	true	true
+ff90	[FUN_0010ff90]	[targff90]	true	true
+ffe0	[FUN_0010ffe0]	[targffe0]	true	true
+103b0	[FUN_001103b0]	[ ]	false	false
+10450	[FUN_00110450]	[targ10450]	true	true
+10610	[FUN_00110610]	[targ10610]	true	true
+10640	[FUN_00110640]	[targ10640]	true	true
+10880	[FUN_00110880]	[targ10880]	true	true
+10890	[FUN_00110890]	[targ10890]	true	true
+108e0	[FUN_001108e0]	[targ108e0]	true	true
+10930	[FUN_00110930]	[targ10930]	true	true
+123f0	[FUN_001123f0]	[targ123f0]	true	true
+12440	[FUN_00112440]	[targ12440]	true	true
+124e0	[FUN_001124e0]	[targ124e0]	true	true
+125d0	[FUN_001125d0]	[targ125d0]	true	true
+13810	[FUN_00113810]	[targ13810]	true	true
+139c0	[FUN_001139c0]	[targ139c0]	true	true
+13a00	[FUN_00113a00]	[targ13a00]	true	true
+13a20	[FUN_00113a20]	[targ13a20]	true	true
+13a40	[FUN_00113a40]	[targ13a40]	true	true
+13a80	[FUN_00113a80]	[ ]	false	false
+13aa0	[FUN_00113aa0]	[ ]	false	false
+13ad0	[FUN_00113ad0]	[targ13ad0]	true	true
+13b50	[FUN_00113b50]	[ ]	false	false
+13c40	[FUN_00113c40]	[ ]	false	false
+13c50	[FUN_00113c50]	[ ]	false	false
+13cf0	[FUN_00113cf0]	[ ]	false	false
+13d10	[FUN_00113d10]	[ ]	false	false
+13d20	[FUN_00113d20]	[ ]	false	false
+13d40	[FUN_00113d40]	[ ]	false	false
+13d60	[FUN_00113d60]	[targ13d60]	true	true
+13df0	[FUN_00113df0]	[ ]	false	false
+13e80	[FUN_00113e80]	[targ13e80]	true	true
+13e90	[FUN_00113e90]	[ ]	false	false
+13ea0	[FUN_00113ea0]	[ ]	false	false
+13f40	[FUN_00113f40]	[ ]	false	false
+13f50	[FUN_00113f50]	[ ]	false	false
+13f70	[FUN_00113f70]	[ ]	false	false
+13f80	[FUN_00113f80]	[targ13f80]	true	true
+14010	[FUN_00114010]	[ ]	false	false
+140b0	[FUN_001140b0]	[ ]	false	false
+140c0	[FUN_001140c0]	[ ]	false	false
+140e0	[FUN_001140e0]	[ ]	false	false
+14100	[FUN_00114100]	[ ]	false	false
+14110	[FUN_00114110]	[ ]	false	false
+14130	[FUN_00114130]	[targ14130]	true	true
+14150	[FUN_00114150]	[targ14150]	true	true
+14170	[FUN_00114170]	[ ]	false	false
+142a0	[FUN_001142a0]	[ ]	false	false
+14340	[FUN_00114340]	[ ]	false	false
+14360	[FUN_00114360]	[targ14360]	true	true
+147a0	[FUN_001147a0]	[ ]	false	false
+147c0	[FUN_001147c0]	[ ]	false	false
+14840	[FUN_00114840]	[targ14840]	true	true
+14920	[FUN_00114920]	[ ]	false	false
+149c0	[FUN_001149c0]	[targ149c0]	true	true
+149e0	[FUN_001149e0]	[ ]	false	false
+14a20	[FUN_00114a20]	[targ14a20]	true	true
+14a60	[FUN_00114a60]	[ ]	false	false
+14a90	[FUN_00114a90]	[ ]	false	false
+14b20	[FUN_00114b20]	[targ14b20]	true	true
+14b70	[FUN_00114b70]	[ ]	false	false
+14b90	[FUN_00114b90]	[ ]	false	false
+14bc0	[FUN_00114bc0]	[targ14bc0]	true	true
+14bf0	[FUN_00114bf0]	[targ14bf0]	true	true
+14c10	[FUN_00114c10]	[targ14c10]	true	true
+14c50	[FUN_00114c50]	[targ14c50]	true	true
+14d50	[FUN_00114d50]	[ ]	false	false
+14d80	[FUN_00114d80]	[targ14d80]	true	true
+14db0	[FUN_00114db0]	[targ14db0]	true	true
+14eb0	[FUN_00114eb0]	[targ14eb0]	true	true
+14f60	[FUN_00114f60]	[targ14f60]	true	true
+15380	[FUN_00115380]	[targ15380]	true	true
+153f0	[FUN_001153f0]	[targ153f0]	true	true
+15410	[FUN_00115410]	[targ15410]	true	true
+15430	[FUN_00115430]	[ ]	false	false
+15450	[FUN_00115450]	[targ15450]	true	true
+154e0	[FUN_001154e0]	[ ]	false	false
+15520	[FUN_00115520]	[targ15520]	true	true
+15540	[FUN_00115540]	[targ15540]	true	true
+15560	[FUN_00115560]	[ ]	false	false
+155f0	[_obstack_begin]	[_obstack_begin]	true	true
+15610	[_obstack_begin_1]	[_obstack_begin_1]	true	true
+15630	[_obstack_newchunk]	[_obstack_newchunk]	true	true
+15720	[_obstack_allocated_p]	[_obstack_allocated_p]	true	true
+15760	[_obstack_free]	[_obstack_free]	true	true
+157d0	[_obstack_memory_used]	[_obstack_memory_used]	true	true
+15800	[FUN_00115800]	[targ15800]	true	true
+15830	[FUN_00115830]	[targ15830]	true	true
+15860	[FUN_00115860]	[targ15860]	true	true
+158c0	[FUN_001158c0]	[targ158c0]	true	true
+15950	[FUN_00115950]	[targ15950]	true	true
+15a90	[FUN_00115a90]	[targ15a90]	true	true
+15b70	[FUN_00115b70]	[ ]	false	false
+15b80	[FUN_00115b80]	[targ15b80]	true	true
+15c30	[FUN_00115c30]	[targ15c30]	true	true
+15d80	[FUN_00115d80]	[ ]	false	false
+15e00	[FUN_00115e00]	[targ15e00]	true	true
+15e20	[FUN_00115e20]	[ ]	false	false
+15e60	[FUN_00115e60]	[targ15e60]	true	true
+15ea0	[FUN_00115ea0]	[ ]	false	false
+15f20	[FUN_00115f20]	[targ15f20]	true	true
+15f60	[FUN_00115f60]	[targ15f60]	true	true
+15fc0	[FUN_00115fc0]	[ ]	false	false
+16030	[FUN_00116030]	[ ]	false	false
+16040	[FUN_00116040]	[targ16040]	true	true
+16050	[_fini]	[_fini]	true	true

@@ -15,13 +15,13 @@ public class ReportBuilder {
     }
 
     public void printAllAddresses(ArrayList<String> tools) {
-        System.out.print("Address, ");
+        System.out.print("Address\t");
 
         for (int i = 0; i < numTools; i++) {
-            System.out.print(tools.get(i) + " Symbols, ");
+            System.out.print(tools.get(i) + " Symbols\t");
         }
 
-        System.out.println("Full Match, Partial Match");
+        System.out.println("Full Match\tPartial Match");
 
         for(Map.Entry<Long, Address> entry : addrMap.entrySet()) {
             entry.getValue().printAddress();

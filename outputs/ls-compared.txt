@@ -1,0 +1,388 @@
+Comparison of the Reverse Engineering Tools Ghidra and Dyninst
+
+Address, Ghidra Symbols, Dyninst Symbols, Full Match, Partial Match
+3408, [_init], [_init], true, true
+3420, [FUN_00103420], [ ], false, false
+3430, [ ], [__ctype_toupper_loc], false, false
+3440, [ ], [getenv], false, false
+3450, [ ], [sigprocmask], false, false
+3460, [ ], [__snprintf_chk], false, false
+3470, [ ], [raise], false, false
+3480, [ ], [abort], false, false
+3490, [ ], [__errno_location], false, false
+34a0, [ ], [strncmp], false, false
+34b0, [ ], [localtime_r], false, false
+34c0, [ ], [_exit], false, false
+34d0, [ ], [strcpy], false, false
+34e0, [ ], [__fpending], false, false
+34f0, [ ], [isatty], false, false
+3500, [ ], [sigaction], false, false
+3510, [ ], [iswcntrl], false, false
+3520, [ ], [wcswidth], false, false
+3530, [ ], [localeconv], false, false
+3540, [ ], [mbstowcs], false, false
+3550, [ ], [readlink], false, false
+3560, [ ], [clock_gettime], false, false
+3570, [ ], [setenv], false, false
+3580, [ ], [textdomain], false, false
+3590, [ ], [fclose], false, false
+35a0, [ ], [opendir], false, false
+35b0, [ ], [getpwuid], false, false
+35c0, [ ], [bindtextdomain], false, false
+35d0, [ ], [dcgettext], false, false
+35e0, [ ], [__ctype_get_mb_cur_max], false, false
+35f0, [ ], [strlen], false, false
+3600, [ ], [__lxstat], false, false
+3610, [ ], [__stack_chk_fail], false, false
+3620, [ ], [getopt_long], false, false
+3630, [ ], [mbrtowc], false, false
+3640, [ ], [strchr], false, false
+3650, [ ], [getgrgid], false, false
+3660, [ ], [__fxstatat], false, false
+3670, [ ], [snprintf], false, false
+3680, [ ], [__overflow], false, false
+3690, [ ], [strrchr], false, false
+36a0, [ ], [fgetfilecon], false, false
+36b0, [ ], [gmtime_r], false, false
+36c0, [ ], [lseek], false, false
+36d0, [ ], [__assert_fail], false, false
+36e0, [ ], [__strtoul_internal], false, false
+36f0, [ ], [fnmatch], false, false
+3700, [ ], [memset], false, false
+3710, [ ], [ioctl], false, false
+3720, [ ], [getcwd], false, false
+3730, [ ], [strspn], false, false
+3740, [ ], [closedir], false, false
+3750, [ ], [memcmp], false, false
+3760, [ ], [_setjmp], false, false
+3770, [ ], [fputs_unlocked], false, false
+3780, [ ], [calloc], false, false
+3790, [ ], [lgetfilecon], false, false
+37a0, [ ], [strcmp], false, false
+37b0, [ ], [signal], false, false
+37c0, [ ], [dirfd], false, false
+37d0, [ ], [fputc_unlocked], false, false
+37e0, [ ], [getpwnam], false, false
+37f0, [ ], [__memcpy_chk], false, false
+3800, [ ], [sigemptyset], false, false
+3810, [ ], [memcpy], false, false
+3820, [ ], [getgrnam], false, false
+3830, [ ], [getfilecon], false, false
+3840, [ ], [tzset], false, false
+3850, [ ], [fileno], false, false
+3860, [ ], [tcgetpgrp], false, false
+3870, [ ], [__xstat], false, false
+3880, [ ], [readdir], false, false
+3890, [ ], [wcwidth], false, false
+38a0, [ ], [fflush], false, false
+38b0, [ ], [nl_langinfo], false, false
+38c0, [ ], [__fxstat], false, false
+38d0, [ ], [strcoll], false, false
+38e0, [ ], [mktime], false, false
+38f0, [ ], [__freading], false, false
+3900, [ ], [fwrite_unlocked], false, false
+3910, [ ], [realloc], false, false
+3920, [ ], [stpncpy], false, false
+3930, [ ], [setlocale], false, false
+3940, [ ], [__printf_chk], false, false
+3950, [ ], [timegm], false, false
+3960, [ ], [strftime], false, false
+3970, [ ], [mempcpy], false, false
+3980, [ ], [memmove], false, false
+3990, [ ], [error], false, false
+39a0, [ ], [fseeko], false, false
+39b0, [ ], [unsetenv], false, false
+39c0, [ ], [__cxa_atexit], false, false
+39d0, [ ], [wcstombs], false, false
+39e0, [ ], [freecon], false, false
+39f0, [ ], [gethostname], false, false
+3a00, [ ], [sigismember], false, false
+3a10, [ ], [exit], false, false
+3a20, [ ], [fwrite], false, false
+3a30, [ ], [__fprintf_chk], false, false
+3a40, [ ], [fflush_unlocked], false, false
+3a50, [ ], [mbsinit], false, false
+3a60, [ ], [iswprint], false, false
+3a70, [ ], [sigaddset], false, false
+3a80, [ ], [__ctype_tolower_loc], false, false
+3a90, [ ], [__ctype_b_loc], false, false
+3aa0, [ ], [__sprintf_chk], false, false
+3ab0, [ ], [free], false, false
+3ab8, [ ], [malloc], false, false
+3ac0, [ ], [__cxa_finalize], false, false
+3ad0, [main], [main], true, true
+54a0, [_start], [_start], true, true
+54d0, [deregister_tm_clones], [deregister_tm_clones], true, true
+5510, [register_tm_clones], [register_tm_clones], true, true
+5560, [__do_global_dtors_aux], [__do_global_dtors_aux], true, true
+55a0, [frame_dummy], [frame_dummy], true, true
+55b0, [dev_ino_hash], [dev_ino_hash], true, true
+55c0, [dev_ino_compare], [dev_ino_compare], true, true
+55e0, [sighandler], [sighandler], true, true
+5600, [ ], [dev_ino_free], false, false
+5610, [get_funky_string], [get_funky_string], true, true
+58a0, [set_line_length], [set_line_length], true, true
+5920, [is_colored], [is_colored], true, true
+5980, [abformat_init], [abformat_init], true, true
+5c00, [queue_directory], [queue_directory], true, true
+5c70, [strcmp_size], [strcmp_size], true, true
+5cb0, [rev_strcmp_size], [rev_strcmp_size], true, true
+5cf0, [strcmp_name], [strcmp_name], true, true
+5d00, [rev_strcmp_name], [rev_strcmp_name], true, true
+5d10, [free_ent], [free_ent], true, true
+5d60, [clear_files], [clear_files], true, true
+5e10, [needs_quoting], [needs_quoting], true, true
+5e90, [file_escape], [file_escape], true, true
+5f70, [sort_files], [sort_files], true, true
+6110, [xstrcoll], [xstrcoll], true, true
+6140, [xstrcoll_size], [xstrcoll_size], true, true
+6170, [rev_xstrcoll_size], [rev_xstrcoll_size], true, true
+61b0, [xstrcoll_name], [xstrcoll_name], true, true
+61c0, [rev_xstrcoll_name], [rev_xstrcoll_name], true, true
+61d0, [rev_xstrcoll_version], [rev_xstrcoll_version], true, true
+61e0, [xstrcoll_version], [xstrcoll_version], true, true
+61f0, [extract_dirs_from_files], [extract_dirs_from_files], true, true
+6360, [indent], [indent], true, true
+6430, [dired_dump_obstack], [dired_dump_obstack], true, true
+6500, [format_user_or_group], [format_user_or_group], true, true
+65c0, [format_user], [format_user], true, true
+6600, [stophandler], [stophandler], true, true
+6620, [file_failure], [file_failure], true, true
+6690, [xstrcoll_df_size], [xstrcoll_df_size], true, true
+6730, [strcmp_df_size], [strcmp_df_size], true, true
+67d0, [rev_xstrcoll_df_size], [rev_xstrcoll_df_size], true, true
+6870, [rev_strcmp_df_size], [rev_strcmp_df_size], true, true
+6910, [xstrcoll_df_name], [xstrcoll_df_name], true, true
+69a0, [strcmp_df_name], [strcmp_df_name], true, true
+6a30, [rev_xstrcoll_df_name], [rev_xstrcoll_df_name], true, true
+6ac0, [rev_strcmp_df_name], [rev_strcmp_df_name], true, true
+6b50, [get_type_indicator], [get_type_indicator], true, true
+6c50, [print_type_indicator], [print_type_indicator], true, true
+6ca0, [strcmp_df_mtime], [strcmp_df_mtime], true, true
+6d50, [rev_xstrcoll_df_version], [rev_xstrcoll_df_version], true, true
+6de0, [xstrcoll_df_version], [xstrcoll_df_version], true, true
+6e70, [rev_strcmp_df_extension], [rev_strcmp_df_extension], true, true
+6f70, [signal_setup], [signal_setup], true, true
+7140, [prep_non_filename_text], [prep_non_filename_text], true, true
+7190, [put_indicator], [put_indicator], true, true
+7200, [process_signals], [process_signals], true, true
+72f0, [set_normal_color], [set_normal_color], true, true
+7340, [quote_name_buf.constprop.50], [quote_name_buf.constprop.50], true, true
+7770, [quote_name], [quote_name], true, true
+7b80, [print_name_with_quoting], [print_name_with_quoting], true, true
+7fe0, [print_file_name_and_frills], [print_file_name_and_frills], true, true
+8170, [print_long_format], [print_long_format], true, true
+8b80, [quote_name_width], [quote_name_width], true, true
+8c10, [length_of_file_name_and_frills], [length_of_file_name_and_frills], true, true
+8dc0, [calculate_columns], [calculate_columns], true, true
+90d0, [print_with_separator], [print_with_separator], true, true
+9280, [print_current_files], [print_current_files], true, true
+9660, [rev_strcmp_df_atime], [rev_strcmp_df_atime], true, true
+9710, [rev_strcmp_df_ctime], [rev_strcmp_df_ctime], true, true
+97d0, [format_user_width], [format_user_width], true, true
+98a0, [gobble_file.constprop.49], [gobble_file.constprop.49], true, true
+a700, [print_dir], [print_dir], true, true
+adc0, [rev_xstrcoll_atime], [rev_xstrcoll_atime], true, true
+ae00, [xstrcoll_mtime], [xstrcoll_mtime], true, true
+ae40, [rev_xstrcoll_ctime], [rev_xstrcoll_ctime], true, true
+ae90, [xstrcoll_atime], [xstrcoll_atime], true, true
+aed0, [rev_xstrcoll_mtime], [rev_xstrcoll_mtime], true, true
+af10, [xstrcoll_ctime], [xstrcoll_ctime], true, true
+af60, [rev_xstrcoll_extension], [rev_xstrcoll_extension], true, true
+afd0, [xstrcoll_extension], [xstrcoll_extension], true, true
+b040, [rev_strcmp_atime], [rev_strcmp_atime], true, true
+b080, [strcmp_atime], [strcmp_atime], true, true
+b0c0, [rev_strcmp_mtime], [rev_strcmp_mtime], true, true
+b100, [strcmp_mtime], [strcmp_mtime], true, true
+b140, [rev_strcmp_ctime], [rev_strcmp_ctime], true, true
+b190, [strcmp_ctime], [strcmp_ctime], true, true
+b1e0, [xstrcoll_df_atime], [xstrcoll_df_atime], true, true
+b290, [rev_xstrcoll_df_mtime], [rev_xstrcoll_df_mtime], true, true
+b340, [rev_xstrcoll_df_ctime], [rev_xstrcoll_df_ctime], true, true
+b400, [xstrcoll_df_mtime], [xstrcoll_df_mtime], true, true
+b4b0, [xstrcoll_df_ctime], [xstrcoll_df_ctime], true, true
+b570, [rev_xstrcoll_df_atime], [rev_xstrcoll_df_atime], true, true
+b620, [rev_strcmp_extension], [rev_strcmp_extension], true, true
+b6a0, [strcmp_extension], [strcmp_extension], true, true
+b720, [xstrcoll_df_extension], [xstrcoll_df_extension], true, true
+b810, [rev_xstrcoll_df_extension], [rev_xstrcoll_df_extension], true, true
+b900, [rev_strcmp_df_mtime], [rev_strcmp_df_mtime], true, true
+b9b0, [strcmp_df_ctime], [strcmp_df_ctime], true, true
+ba70, [strcmp_df_atime], [strcmp_df_atime], true, true
+bb20, [strcmp_df_extension], [strcmp_df_extension], true, true
+bc20, [usage], [usage], true, true
+c360, [areadlink_with_size], [areadlink_with_size], true, true
+c530, [__argmatch_die], [__argmatch_die], true, true
+c540, [argmatch], [argmatch], true, true
+c660, [argmatch_invalid], [argmatch_invalid], true, true
+c6e0, [argmatch_valid], [argmatch_valid], true, true
+c800, [__xargmatch_internal], [__xargmatch_internal], true, true
+c870, [argmatch_to_argument], [argmatch_to_argument], true, true
+c8c0, [c_strncasecmp], [c_strncasecmp], true, true
+c930, [canonicalize_filename_mode], [canonicalize_filename_mode], true, true
+cf70, [close_stdout_set_file_name], [close_stdout_set_file_name], true, true
+cf80, [close_stdout_set_ignore_EPIPE], [close_stdout_set_ignore_EPIPE], true, true
+cf90, [close_stdout], [close_stdout], true, true
+d040, [dir_len], [dir_len], true, true
+d0a0, [mdir_name], [mdir_name], true, true
+d100, [last_component], [last_component], true, true
+d160, [base_len], [base_len], true, true
+d1b0, [file_has_acl], [file_has_acl], true, true
+d1c0, [record_file], [record_file], true, true
+d250, [seen_file], [seen_file], true, true
+d2b0, [strmode], [strmode], true, true
+d440, [filemodestring], [filemodestring], true, true
+d450, [file_name_concat], [file_name_concat], true, true
+d470, [mfile_name_concat], [mfile_name_concat], true, true
+d570, [match_suffix], [match_suffix], true, true
+d640, [filevercmp], [filevercmp], true, true
+da70, [gettime], [gettime], true, true
+da80, [current_timespec], [current_timespec], true, true
+dad0, [hard_locale], [hard_locale], true, true
+db30, [next_prime], [next_prime], true, true
+dbd0, [raw_hasher], [raw_hasher], true, true
+dbe0, [raw_comparator], [raw_comparator], true, true
+dbf0, [safe_hasher], [safe_hasher], true, true
+dc20, [hash_find_entry], [hash_find_entry], true, true
+dd40, [check_tuning.isra.0], [check_tuning.isra.0], true, true
+ddc0, [transfer_entries], [transfer_entries], true, true
+df00, [hash_get_n_buckets], [hash_get_n_buckets], true, true
+df10, [hash_get_n_buckets_used], [hash_get_n_buckets_used], true, true
+df20, [hash_get_n_entries], [hash_get_n_entries], true, true
+df30, [hash_get_max_bucket_length], [hash_get_max_bucket_length], true, true
+df80, [hash_table_ok], [hash_table_ok], true, true
+dfe0, [hash_print_statistics], [hash_print_statistics], true, true
+e130, [hash_lookup], [hash_lookup], true, true
+e190, [hash_get_first], [hash_get_first], true, true
+e1e0, [hash_get_next], [hash_get_next], true, true
+e260, [hash_get_entries], [hash_get_entries], true, true
+e2d0, [hash_do_for_each], [hash_do_for_each], true, true
+e340, [hash_string], [hash_string], true, true
+e380, [hash_reset_tuning], [hash_reset_tuning], true, true
+e3a0, [hash_initialize], [hash_initialize], true, true
+e560, [hash_clear], [hash_clear], true, true
+e5f0, [hash_free], [hash_free], true, true
+e6d0, [hash_rehash], [hash_rehash], true, true
+e910, [hash_insert_if_absent], [hash_insert_if_absent], true, true
+eba0, [hash_insert], [hash_insert], true, true
+ec00, [hash_delete], [hash_delete], true, true
+ee10, [triple_hash], [triple_hash], true, true
+ee40, [triple_hash_no_name], [triple_hash_no_name], true, true
+ee50, [triple_compare], [triple_compare], true, true
+ee80, [triple_compare_ino_str], [triple_compare_ino_str], true, true
+eec0, [triple_free], [triple_free], true, true
+eee0, [adjust_value.part.0], [adjust_value.part.0], true, true
+efb0, [human_readable], [human_readable], true, true
+f9c0, [human_options], [human_options], true, true
+fbb0, [getuser], [getuser], true, true
+fc50, [getuidbyname], [getuidbyname], true, true
+fd50, [getgroup], [getgroup], true, true
+fdf0, [getgidbyname], [getgidbyname], true, true
+fef0, [imaxtostr], [imaxtostr], true, true
+ff90, [umaxtostr], [umaxtostr], true, true
+ffe0, [mbsalign], [mbsalign], true, true
+103b0, [ambsalign], [ambsalign], true, true
+10450, [mbsnwidth], [mbsnwidth], true, true
+10610, [gnu_mbswidth], [gnu_mbswidth], true, true
+10640, [mpsort_with_tmp], [mpsort_with_tmp], true, true
+10880, [mpsort], [mpsort], true, true
+10890, [memcpy_lowcase], [memcpy_lowcase], true, true
+108e0, [memcpy_uppcase], [memcpy_uppcase], true, true
+10930, [__strftime_internal], [__strftime_internal], true, true
+123f0, [nstrftime], [nstrftime], true, true
+12440, [set_program_name], [set_program_name], true, true
+124e0, [gettext_quote.part.1], [gettext_quote.part.1], true, true
+125d0, [quotearg_buffer_restyled], [quotearg_buffer_restyled], true, true
+13810, [quotearg_n_options], [quotearg_n_options], true, true
+139c0, [clone_quoting_options], [clone_quoting_options], true, true
+13a00, [get_quoting_style], [get_quoting_style], true, true
+13a20, [set_quoting_style], [set_quoting_style], true, true
+13a40, [set_char_quoting], [set_char_quoting], true, true
+13a80, [set_quoting_flags], [set_quoting_flags], true, true
+13aa0, [set_custom_quoting], [set_custom_quoting], true, true
+13ad0, [quotearg_buffer], [quotearg_buffer], true, true
+13b50, [quotearg_alloc_mem], [quotearg_alloc_mem], true, true
+13c40, [quotearg_alloc], [quotearg_alloc], true, true
+13c50, [quotearg_free], [quotearg_free], true, true
+13cf0, [quotearg_n], [quotearg_n], true, true
+13d10, [quotearg_n_mem], [quotearg_n_mem], true, true
+13d20, [quotearg], [quotearg], true, true
+13d40, [quotearg_mem], [quotearg_mem], true, true
+13d60, [quotearg_n_style], [quotearg_n_style], true, true
+13df0, [quotearg_n_style_mem], [quotearg_n_style_mem], true, true
+13e80, [quotearg_style], [quotearg_style], true, true
+13e90, [quotearg_style_mem], [quotearg_style_mem], true, true
+13ea0, [quotearg_char_mem], [quotearg_char_mem], true, true
+13f40, [quotearg_char], [quotearg_char], true, true
+13f50, [quotearg_colon], [quotearg_colon], true, true
+13f70, [quotearg_colon_mem], [quotearg_colon_mem], true, true
+13f80, [quotearg_n_style_colon], [quotearg_n_style_colon], true, true
+14010, [quotearg_n_custom_mem], [quotearg_n_custom_mem], true, true
+140b0, [quotearg_n_custom], [quotearg_n_custom], true, true
+140c0, [quotearg_custom], [quotearg_custom], true, true
+140e0, [quotearg_custom_mem], [quotearg_custom_mem], true, true
+14100, [quote_n_mem], [quote_n_mem], true, true
+14110, [quote_mem], [quote_mem], true, true
+14130, [quote_n], [quote_n], true, true
+14150, [quote], [quote], true, true
+14170, [same_nameat.part.0], [same_nameat.part.0], true, true
+142a0, [same_nameat], [same_nameat], true, true
+14340, [same_name], [same_name], true, true
+14360, [version_etc_arn], [version_etc_arn], true, true
+147a0, [version_etc_ar], [version_etc_ar], true, true
+147c0, [version_etc_va], [version_etc_va], true, true
+14840, [version_etc], [version_etc], true, true
+14920, [emit_bug_reporting_address], [emit_bug_reporting_address], true, true
+149c0, [xmalloc], [xmalloc], true, true
+149e0, [xnmalloc], [xnmalloc], true, true
+14a10, [ ], [xcharalloc], false, false
+14a20, [xrealloc], [xrealloc], true, true
+14a60, [xnrealloc], [xnrealloc], true, true
+14a90, [x2nrealloc], [x2nrealloc], true, true
+14b20, [x2realloc], [x2realloc], true, true
+14b70, [xzalloc], [xzalloc], true, true
+14b90, [xcalloc], [xcalloc], true, true
+14bc0, [xmemdup], [xmemdup], true, true
+14bf0, [xstrdup], [xstrdup], true, true
+14c10, [xalloc_die], [xalloc_die], true, true
+14c50, [xnumtoumax], [xnumtoumax], true, true
+14d50, [xdectoumax], [xdectoumax], true, true
+14d80, [xgetcwd], [xgetcwd], true, true
+14db0, [xgethostname], [xgethostname], true, true
+14eb0, [xstrtol_fatal], [xstrtol_fatal], true, true
+14f60, [xstrtoumax], [xstrtoumax], true, true
+15380, [map_to_failure], [map_to_failure], true, true
+153f0, [rpl_getfilecon], [rpl_getfilecon], true, true
+15410, [rpl_lgetfilecon], [rpl_lgetfilecon], true, true
+15430, [rpl_fgetfilecon], [rpl_fgetfilecon], true, true
+15450, [rpl_mbrtowc], [rpl_mbrtowc], true, true
+154e0, [print_and_abort], [print_and_abort], true, true
+15520, [call_chunkfun], [call_chunkfun], true, true
+15540, [call_freefun], [call_freefun], true, true
+15560, [_obstack_begin_worker], [_obstack_begin_worker], true, true
+155f0, [_obstack_begin], [_obstack_begin], true, true
+15610, [_obstack_begin_1], [_obstack_begin_1], true, true
+15630, [_obstack_newchunk], [_obstack_newchunk], true, true
+15720, [_obstack_allocated_p], [_obstack_allocated_p], true, true
+15760, [_obstack_free], [_obstack_free], true, true
+157d0, [_obstack_memory_used], [_obstack_memory_used], true, true
+15800, [setenv_TZ], [setenv_TZ], true, true
+15830, [tzfree.part.0], [tzfree.part.0], true, true
+15860, [revert_tz.part.1], [revert_tz.part.1], true, true
+158c0, [tzalloc], [tzalloc], true, true
+15950, [save_abbr], [save_abbr], true, true
+15a90, [set_tz], [set_tz], true, true
+15b70, [tzfree], [tzfree], true, true
+15b80, [localtime_rz], [localtime_rz], true, true
+15c30, [mktime_z], [mktime_z], true, true
+15d80, [close_stream], [close_stream], true, true
+15e00, [dir_name], [dir_name], true, true
+15e20, [hash_pjw], [hash_pjw], true, true
+15e60, [locale_charset], [locale_charset], true, true
+15ea0, [rpl_fclose], [rpl_fclose], true, true
+15f20, [rpl_fflush], [rpl_fflush], true, true
+15f60, [rpl_fseeko], [rpl_fseeko], true, true
+15fc0, [__libc_csu_init], [__libc_csu_init], true, true
+16030, [__libc_csu_fini], [__libc_csu_fini], true, true
+16040, [atexit], [atexit], true, true
+16050, [_fini], [_fini], true, true
