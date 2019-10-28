@@ -41,11 +41,6 @@ public class Address {
     }
 
     public void updateFunctions(List<String> functions) {
-        if (this.functions.size() <= 0) {
-            this.functions = functions;
-            return;
-        }
-
         for (int i = 0; i < functions.size(); i++) {
             if (!this.functions.contains(functions.get(i)))
                 this.functions.add(functions.get(i));
@@ -61,11 +56,16 @@ public class Address {
     }
 
     public void printAddress() {
-        System.out.print(Long.toHexString(this.address) + "\t");
+        System.out.print(Long.toHexString(this.address) + ", ");
         // print all tools
         for (Map.Entry<Integer, List<String>> entry : tools.entrySet()) {
-            System.out.print(entry.getValue() + "\t");
+            if(entry.getValue() == null)
+                System.out.print("[ ], ");
+            else
+                System.out.print(entry.getValue() + ", ");
         }
+
+        System.out.println(fullMatch + ", " + partialMatch);
     }
 
     @Override
@@ -85,11 +85,6 @@ public class Address {
                     fullMatch = false;
                     return;
                 }
-                /*for (int i = 0; i < entry.getValue(); i++) {
-                    if (isSynthetic(entry.getValue().get(i))) {
-
-                    }
-                }*/
                 if (isSynthetic(functions.get(i))) {
                     if (!isSynMatch(entry.getValue(), functions.get(i))) {
                         fullMatch = false; 

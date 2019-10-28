@@ -14,7 +14,15 @@ public class ReportBuilder {
         findAddresses();
     }
 
-    public void printAllAddresses() {
+    public void printAllAddresses(ArrayList<String> tools) {
+        System.out.print("Address, ");
+
+        for (int i = 0; i < numTools; i++) {
+            System.out.print(tools.get(i) + " Symbols, ");
+        }
+
+        System.out.println("Full Match, Partial Match");
+
         for(Map.Entry<Long, Address> entry : addrMap.entrySet()) {
             entry.getValue().printAddress();
         }
@@ -27,7 +35,8 @@ public class ReportBuilder {
 
         for(Map.Entry<Long, Address> entry : addrMap.entrySet()) {
             if (entry.getValue().getFullMatch()) {
-                entry.getValue().printAddress();
+                System.out.print(Long.toHexString(entry.getValue().getAddress()) + "\t");
+                System.out.println(entry.getValue().getFunctions());
                 count++;
             }
         }
@@ -82,8 +91,8 @@ public class ReportBuilder {
                 if(addrMap.containsKey(entry.getKey())) {
                     address = addrMap.get(entry.getKey());
 
-                    address.updateFunctions(entry.getValue());
                     address.updateTools(i, entry.getValue());
+                    address.updateFunctions(entry.getValue());
                 } else {
                     address = new Address(entry.getKey(), numTools);
                     address.updateFunctions(entry.getValue());

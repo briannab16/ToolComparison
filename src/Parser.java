@@ -11,6 +11,8 @@ public class Parser {
     }
 
     public Map<Long, List<String>> parseFile(String filename, String type) {
+        map = null;
+
         try {
             File file = new File(filename);
             reader = new BufferedReader(new FileReader(file));

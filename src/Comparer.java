@@ -7,8 +7,15 @@ public class Comparer {
 		List<Map<Long, List<String>>> mapList = new ArrayList<Map<Long, List<String>>>();
 		Parser parser = new Parser();
 		Map<Long, List<String>> tempMap = null;
+		boolean reportForm = false;
+		int initial = 0;
 
-		for (int i = 0; i < args.length - 1; i += 2) {
+		if(args.length >= 1 && args[0].equals("-r")) {
+			reportForm = true;
+			initial = 1;
+		}
+
+		for (int i = initial; i < args.length - 1; i += 2) {
 			tempMap = null;
 			if((tempMap = parser.parseFile(args[i + 1], args[i])) == null) {
 				System.out.println("Problem parsing files");
@@ -16,13 +23,23 @@ public class Comparer {
 			}
 			mapList.add(tempMap);
 		}
+
+		/*
+		CHECK MAPLIST 
+		GOOD
+
+		for(int i =0; i < mapList.size(); i++) {
+			for(Map.Entry<Long, List<String>> entry : mapList.get(i).entrySet()) {
+				System.out.println("m " + entry.getValue());
+			}
+		}*/
 		
 		ReportBuilder rb = new ReportBuilder(mapList, mapList.size());
 
 		ArrayList<String> tools = new ArrayList<String>();
 
 		System.out.print("Comparison of the Reverse Engineering Tools ");
-		for (int i = 0; i < args.length - 1; i += 2) {
+		for (int i = initial; i < args.length - 1; i += 2) {
 			if (args[i].equals("-o")) {
 				System.out.print("Objdump");
 				tools.add("Objdump");
@@ -40,14 +57,16 @@ public class Comparer {
 				System.out.print(" and ");
 		}
 
-		//System.out.println("\n");
-		//rb.printAllAddresses();
-
-		System.out.println("\n");
-		rb.printFullMatches();
-		System.out.print("\n");
-		rb.printPartialMatches(tools);
-		System.out.print("\n");
-		rb.printUniqueMatches(tools);
+		if(reportForm) {
+			System.out.println("\n");
+			rb.printFullMatches();
+			System.out.print("\n");
+			rb.printPartialMatches(tools);
+			System.out.print("\n");
+			rb.printUniqueMatches(tools);
+		} else {
+			System.out.println("\n");
+			rb.printAllAddresses(tools);
+		}
 	}
 }
